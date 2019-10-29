@@ -8,7 +8,6 @@
             //This means that the code will run once after you recompile or load your game, then wait for you to run it again
             Runtime.UpdateFrequency = UpdateFrequency.Once; 
 
-            GridTerminalSystem.
             GridTerminalSystem.GetBlocks(blocks); //Getting all blocks and putting them into the list of blocks.
 
             //This bit of code goes through the list of blocks, from end to beginning.
