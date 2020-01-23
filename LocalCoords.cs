@@ -15,10 +15,10 @@
 		
 	public Vector3D LocalCoords(Vector3D worldPos,IMyCockpit cockpit)
         {
-            return RoundVector(Vector3D.TransformNormal(worldPos - cockpit.GetPosition(), MatrixD.Transpose(cockpit.WorldMatrix)));
+            return Vector3D.TransformNormal(worldPos - cockpit.GetPosition(), MatrixD.Transpose(cockpit.WorldMatrix));
         }
 
         public Vector3D LocalCoords(Vector3D worldPos, IMyRemoteControl cockpit)
         {
-            return RoundVector(Vector3D.TransformNormal(worldPos - cockpit.GetPosition(), MatrixD.Transpose(cockpit.WorldMatrix)));
+            return Vector3D.TransformNormal(worldPos - cockpit.GetPosition(), MatrixD.Transpose(cockpit.WorldMatrix));
         }
