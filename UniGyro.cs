@@ -16,15 +16,15 @@
             Vin.Y = cockpit.RotationIndicator.Y;
             Vin.Z = cockpit.RollIndicator;
 
-            SetGyro(Vin.X, Vin.Y, Vin.Z, G1);
+            SetGyro(Vin.X, Vin.Y, Vin.Z, G1, cockpit);
         }
 
-        public void SetGyro(float Pitch, float Yaw, float Roll, IMyGyro Gyr)
+        public void SetGyro(float Pitch, float Yaw, float Roll, IMyGyro Gyr, IMyShipController reference)
         {
             Vector3 Input = new Vector3(Pitch, Yaw, Roll);
-            Vector3 output = Vector3.TransformNormal(Gyr.GetPosition() - cockpit.GetPosition(), Matrix.Transpose(cockpit.WorldMatrix)); //Convert Gyr position to local, relative to Cockpit
+            Vector3 output = Vector3.TransformNormal(Gyr.GetPosition() - reference.GetPosition(), Matrix.Transpose(reference.WorldMatrix)); //Convert Gyr position to local, relative to Cockpit
             output += Input; //Add the input to the local position
-            output = Vector3.Transform(output, cockpit.WorldMatrix); //Convert position back to world position, from the cockpit local grid
+            output = Vector3.Transform(output, reference.WorldMatrix); //Convert position back to world position, from the cockpit local grid
             output = Vector3.TransformNormal(output - Gyr.GetPosition(), Matrix.Transpose(Gyr.WorldMatrix));//Convert world position to local relative to gyro.
 
             Gyr.Pitch = output.X;
