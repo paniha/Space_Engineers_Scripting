@@ -1,0 +1,17 @@
+-  Merge Block - Fix .IsConnected - Returns true as soon as blocks are connectable, instead of when the blocks are actually connected.
+
+- Antenna - Ability to return a list of detected signals, something like a MyDetectedEntity Info list with position and perhaps velocities
+(Perhaps a toggle with increased power consumption, like cameras do with raycasting)
+
+- Ore Detector - Ability to return a list of detected ore veins, something like a MyDetectedEntity Info list with position and ore type, maybe even volume.
+
+- Jump Drive - Add, remove and get a list of GPS Locations, like can be done with Remote waypoints.
+
+- Battery block aditions - Have Power Cells able to charged/discharged, adding a value to them akin to Oxygen and Hydrogen Bottles, then add a battery block with an inventor,
+that is able to drain/charge the cells - This would give the industrious player a way to work around charge times on batteries, and use and overproduction of power in general.
+
+- Projector - Ability to have a list of blueprints, akin to list of waypoints in Remote.
+
+- Projector - Ability have working projections of static grids, from a projector on a Large grid (Eg able to be welded connected only to the ground)
+
+- Projector / Blueprints - Ability to construct blueprints containing subgrids!
