@@ -16,6 +16,6 @@ that is able to drain/charge the cells - This would give the industrious player 
 
 - Projector / Blueprints - Ability to construct blueprints containing subgrids!
 
-- Landing Gear / Magnetic Plate - Status output for lock state eg. "Locked", "Unlocked", "Ready to Lock". the first two can be gotten with .IsLocked, but "Ready to Locked" requires looking at Detailed Info.
+- Landing Gear / Magnetic Plate - Status output for lock state eg. "Locked", "Unlocked", "Ready to Lock". the first two can be gotten with .IsLocked, but "Ready to Lock" requires looking at Detailed Info.
 
 
