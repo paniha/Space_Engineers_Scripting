@@ -15,3 +15,7 @@ that is able to drain/charge the cells - This would give the industrious player 
 - Projector - Ability have working projections of static grids, from a projector on a Large grid (Eg able to be welded connected only to the ground)
 
 - Projector / Blueprints - Ability to construct blueprints containing subgrids!
+
+- Landing Gear / Magnetic Plate - Status output for lock state eg. "Locked", "Unlocked", "Ready to Lock". the first two can be gotten with .IsLocked, but "Ready to Locked" requires looking at Detailed Info.
+
+
