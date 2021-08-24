@@ -1,6 +1,6 @@
 -- Bugs --
 
-- Small grid Piston Head - Inaccurate physics hitbox when incomplete - In incomplete state and not attached to anything, behaves like a sphere and rolls, this "sphere" body is also of a smaller diameter than the piston head, making it able to fall down holes that it otherwise wouldn't.
+- Small grid Piston Head - Inaccurate physics hitbox when in incomplete (1.) state - In the first (last before breaking) incomplete state and not attached to anything, behaves like a sphere and rolls, this "sphere" body is also of a smaller diameter than the piston head, making it able to fall down holes that it otherwise wouldn't.
 
 -  Merge Block - Fix .IsConnected - Returns true as soon as blocks are connectable, instead of when the blocks are actually connected.
 
