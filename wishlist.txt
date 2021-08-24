@@ -1,4 +1,11 @@
+-- Bugs --
+
+- Small grid Piston Head - Inaccurate physics hitbox when incomplete - In incomplete state and not attached to anything, behaves like a sphere and rolls, this "sphere" body is also of a smaller diameter than the piston head, making it able to fall down holes that it otherwise wouldn't.
+
 -  Merge Block - Fix .IsConnected - Returns true as soon as blocks are connectable, instead of when the blocks are actually connected.
+
+
+-- Requests --
 
 - Antenna - Ability to return a list of detected signals, something like a MyDetectedEntity Info list with position and perhaps velocities
 (Perhaps a toggle with increased power consumption, like cameras do with raycasting)
