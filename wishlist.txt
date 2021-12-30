@@ -1,21 +1,29 @@
 -- Bugs --
 
-- Small grid Piston Head - Inaccurate physics hitbox when in incomplete (1.) state - In the first (last before breaking) incomplete state and not attached to anything, behaves like a sphere and rolls, this "sphere" body is also of a smaller diameter than the piston head, making it able to fall down holes that it otherwise wouldn't.
+- Sticky ships - Thrust and Gyro Torque will *sometimes* not register at low speeds
+
+- Override Overload - Continuous rapid Thruster Override adjustments via scripts will *sometimes* result in thruster override not doing anything, neither via script control 
+  nor manual, until the game is reloaded
+
+- Small grid Piston Head - Inaccurate physics hitbox when in incomplete (1.) state - In the first (last before breaking) incomplete state and not attached to anything, 
+  behaves like a sphere and rolls, this "sphere" body is also of a smaller diameter than the piston head, making it able to fall down holes that it otherwise wouldn't.
 
 -  Merge Block - Fix .IsConnected - Returns true as soon as blocks are connectable, instead of when the blocks are actually connected.
 
 
--- Requests --
+-- Scripting Requests --
 
 - Antenna - Ability to return a list of detected signals, something like a MyDetectedEntity Info list with position and perhaps velocities
-(Perhaps a toggle with increased power consumption, like cameras do with raycasting)
+  (Perhaps a toggle with increased power consumption, like cameras do with raycasting)
 
 - Ore Detector - Ability to return a list of detected ore veins, something like a MyDetectedEntity Info list with position and ore type, maybe even volume.
 
 - Jump Drive - Add, remove and get a list of GPS Locations, like can be done with Remote waypoints.
 
+- Jump Drive - Ability to jump.
+
 - Battery block aditions - Have Power Cells able to charged/discharged, adding a value to them akin to Oxygen and Hydrogen Bottles, then add a battery block with an inventor,
-that is able to drain/charge the cells - This would give the industrious player a way to work around charge times on batteries, and use and overproduction of power in general.
+  that is able to drain/charge the cells - This would give the industrious player a way to work around charge times on batteries, and use and overproduction of power in general.
 
 - Projector - Ability to have a list of blueprints, akin to list of waypoints in Remote.
 
@@ -23,6 +31,7 @@ that is able to drain/charge the cells - This would give the industrious player 
 
 - Projector / Blueprints - Ability to construct blueprints containing subgrids!
 
-- Landing Gear / Magnetic Plate - Status output for lock state eg. "Locked", "Unlocked", "Ready to Lock". the first two can be gotten with .IsLocked, but "Ready to Lock" requires looking at Detailed Info.
+- Landing Gear / Magnetic Plate - Status output for lock state eg. "Locked", "Unlocked", "Ready to Lock". the first two can be gotten with .IsLocked, but "Ready to Lock"
+  requires looking at Detailed Info.
 
 
