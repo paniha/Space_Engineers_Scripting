@@ -569,19 +569,6 @@
             }
             return Col;
         }
-        public Program()
-        {
-            // The constructor, called only once every session and
-            // always before any other method is called. Use it to
-            // initialize your script. 
-            //     
-            // The constructor is optional and can be removed if not
-            // needed.
-            // 
-            // It's recommended to set Runtime.UpdateFrequency 
-            // here, which will allow your script to run itself without a 
-            // timer block.
-        }
 
         bool grouped = false;
         public void Main(string argument, UpdateType updateSource)
